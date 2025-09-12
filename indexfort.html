@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+   <img src="https://images.fineartamerica.com/images/artworkimages/medium/2/fortune-cookie-broken-stacy-grant.jpg" alt="">
+    <h1>
+      Fortune Teller
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="questionfield">Question:</label><br>
+      <textarea  type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      </textarea>
+      <br>
+     <label for="bloodQ">Blood Survey</label><br>
+      <select name="blood" id="bloodQ">  
+        <option value="default">What is your blood type</option>
+        <option value="1">O Positive</option>
+        <option value="2">O Negative</option>
+        <option value="3">A Positive</option>
+        <option value="4">A Negative</option>
+        <option value="5">B Positive</option>
+        <option value="6">B Negative</option>
+        <option value="7">AB Positive</option>
+        <option value="8">AB Negative</option>
+     </select>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
